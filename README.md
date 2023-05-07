@@ -6,7 +6,7 @@ This is a simple rock-paper-scissors game built using HTML, CSS, and JavaScript.
 
 ## Demo
 
-![rock paper scissors game play]('images/gameplay.gif')
+![rock paper scissors game play](images/gameplay.gif)
 
 
 ## How to Play
