@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/score.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- js links -->
+    <script src="scripts/background.js"></script>
+</head>
+<body>
+
+    <!-- background image and gif -->
+    <div class="bg-container"></div>
+
+     <!-- game container -->
+    <div class="game-container">
+        <!-- game title -->
+        <div class="title">
+            <h1>Rock Paper Scissors</h1>
+        </div>
+
+        <!-- scores -->
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p id="p-score">0</p>
+              </div>
+              <div class="computer-score">
+                <h2>Computer</h2>
+                <p id="c-score">0</p>
+              </div>
+        </div>
+
+        <!-- move section -->
+        <div class="move">
+            <h3>Make your move</h3>
+        </div>
+
+        <!-- movesleft -->
+        <div class="movesleft">
+            <h4>Moves Left: <span id="movesleft">10</span></h4>
+        </div>
+
+        <!-- play options -->
+        <div class="options">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+
+        <!-- result -->
+        <div class="modal" id="result-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 id="modal-header">Result</h2>
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <div class="result">
+                  <div id="message"></div>
+                  <p id="final-message"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="re-button">
+            <button class="reload" onclick="location.reload()">Play again!</button>
+        </div>
+
+    </div>
+
+    <script src="scripts/game.js"></script>
+</body>
+</html>
