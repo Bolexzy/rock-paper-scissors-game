@@ -1,0 +1,25 @@
+/* css for background images */
+.bg-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/rockpaperscissors.gif');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+.bg-animation {
+    animation-name: play-bg;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+  @keyframes play-bg {
+  from {
+    background-image: url('../images/rockpaperscissors.gif');
+  }
+  to {
+    background-image: url('../images/rockpaperscissors.png');
+  }
+}

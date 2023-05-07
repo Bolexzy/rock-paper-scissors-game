@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* game page */
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+/* page title */
+  .title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 4rem;
+    z-index: 1;
+  }
+
+/* displaying three buttons in one line */
+.options {
+    display: flex;
+    width: 50vw;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.move {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styling on all three buttons */
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #B4B42A;
+    color: #333333;
+    box-shadow: 2px 2px 2px #E6E6E6;
+    transition: all 0.3s ease-in-out;
+    /* cursor: pointer; */
+}
+
+button:hover {
+    background-color: #C5C52D;
+    color: #ffffff;
+    box-shadow: none;
+  }
+
+
+/* win, loose, win texts */
+.text-tie {
+    color: #FFC107;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .text-loose {
+    color: #F44336;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .text-win {
+    color: #4CAF50;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  /* -------- */
+
+.reload {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    background-color: #9ACD32;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+  } 
+
+.reload:hover {
+    background-color: #86B526;
+    box-shadow: none;
+    color: #fff;
+}
+  /* Animation
+@keyframes slide {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100vw 0;
+    }
+  } */
+  
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{  
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+}
